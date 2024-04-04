@@ -2115,8 +2115,8 @@ a.article-title:hover {
   background: var(--blue-1);
   color: #fff;
   font-weight: bold;
-  -webkit-box-shadow: 0 2px 12px rgba(255,78,106,0.55);
-  box-shadow: 0 2px 12px rgba(255,78,106,0.55);
+  -webkit-box-shadow: 0 2px 12px rgba(106,78,255,0.55);
+  box-shadow: 0 2px 12px rgba(106,78,255,0.55);
 }
 @media screen and (max-width: 479px) {
   #page-nav .current {
@@ -2256,11 +2256,11 @@ a.article-title:hover {
   filter: alpha(opacity=30);
   width: 200%;
   height: 10px;
-  background-image: -webkit-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: -moz-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: -o-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: -ms-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: linear-gradient(to left, rgba(255,0,0,0.75) 50%, transparent 0%);
+  background-image: -webkit-linear-gradient(right, rgba(0,0,255,0.75) 50%, transparent 0%);
+  background-image: -moz-linear-gradient(right, rgba(0,0,255,0.75) 50%, transparent 0%);
+  background-image: -o-linear-gradient(right, rgba(0,0,255,0.75) 50%, transparent 0%);
+  background-image: -ms-linear-gradient(right, rgba(0,0,255,0.75) 50%, transparent 0%);
+  background-image: linear-gradient(to left, rgba(0,0,255,0.75) 50%, transparent 0%);
   background-size: 100px 10px;
   background-repeat: repeat-x;
   -webkit-transition: opacity 0.3s;
@@ -2722,7 +2722,7 @@ pre .javascript .function {
   content: " ";
   position: absolute;
   border-radius: 50%;
-  background: #ff5f56;
+  background: #5f56ff;
   width: 12px;
   height: 12px;
   -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
@@ -2935,8 +2935,8 @@ pre .javascript .function {
   -o-transform: scale(1.015);
   -ms-transform: scale(1.015);
   transform: scale(1.015);
-  -webkit-box-shadow: 0 0 10px 3px rgba(255,0,0,0.1);
-  box-shadow: 0 0 10px 3px rgba(255,0,0,0.1);
+  -webkit-box-shadow: 0 0 10px 3px rgba(0,0,255,0.1);
+  box-shadow: 0 0 10px 3px rgba(0,0,255,0.1);
 }
 @media screen and (max-width: 767px) {
   .friend-item-wrap {
@@ -3204,8 +3204,8 @@ pre .javascript .function {
   color: #fff;
   background: var(--blue-1);
   font-weight: bold;
-  -webkit-box-shadow: 0 2px 6px rgba(255,78,106,0.55);
-  box-shadow: 0 2px 6px rgba(255,78,106,0.55);
+  -webkit-box-shadow: 0 2px 6px rgba(106,78,255,0.55);
+  box-shadow: 0 2px 6px rgba(106,78,255,0.55);
 }
 .reimu-pagination .disabled-item {
   display: none;
@@ -3348,8 +3348,8 @@ pre .javascript .function {
   filter: alpha(opacity=0);
   object-fit: cover;
   margin: 20px;
-  -webkit-box-shadow: 0 0 15px 5px rgba(255,0,0,0.2);
-  box-shadow: 0 0 15px 5px rgba(255,0,0,0.2);
+  -webkit-box-shadow: 0 0 15px 5px rgba(0,0,255,0.2);
+  box-shadow: 0 0 15px 5px rgba(0,0,255,0.2);
 }
 .sidebar-author img.lazyloaded {
   opacity: 1;
@@ -3364,7 +3364,7 @@ pre .javascript .function {
 .sidebar-author .sidebar-author-name {
   font-weight: bold;
   font-size: 20px;
-  color: #f77;
+  color: #77f;
   margin: 10px;
 }
 .sidebar-author .sidebar-description {
@@ -3436,10 +3436,10 @@ pre .javascript .function {
   filter: none;
 }
 .sidebar-state .sidebar-state-article {
-  border-right: 1px solid rgba(255,0,0,0.5);
+  border-right: 1px solid rgba(0,0,255,0.5);
 }
 .sidebar-state .sidebar-state-tag {
-  border-left: 1px solid rgba(255,0,0,0.5);
+  border-left: 1px solid rgba(0,0,255,0.5);
 }
 .sidebar-state .sidebar-state-number {
   font-weight: bold;
@@ -3573,7 +3573,7 @@ pre .javascript .function {
   content: "\f0d2";
 }
 .icon-youtube {
-  color: #f00;
+  color: #00f;
 }
 .icon-youtube:before {
   content: "\f167";
@@ -3585,7 +3585,7 @@ pre .javascript .function {
   content: "\f194";
 }
 .icon-flickr {
-  color: #ff0084;
+  color: #0084ff;
 }
 .icon-flickr:before {
   content: "\f16e";
@@ -3627,7 +3627,7 @@ pre .javascript .function {
   content: "\f264";
 }
 .icon-reddit {
-  color: #ff4500;
+  color: #4500ff;
 }
 .icon-reddit:before {
   content: "\f1a1";
@@ -3715,7 +3715,7 @@ pre .javascript .function {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  border: 10px rgba(255,0,0,0.3) double;
+  border: 10px rgba(0,0,255,0.3) double;
   border-radius: 10px;
   -webkit-transition: border 0.5s ease;
   -moz-transition: border 0.5s ease;
@@ -3759,8 +3759,8 @@ pre .javascript .function {
 .link-active {
   background: var(--blue-0);
   border: 10px var(--color-wrap) double;
-  -webkit-box-shadow: 0 0 10px 3px rgba(255,0,0,0.3);
-  box-shadow: 0 0 10px 3px rgba(255,0,0,0.3);
+  -webkit-box-shadow: 0 0 10px 3px rgba(0,0,255,0.3);
+  box-shadow: 0 0 10px 3px rgba(0,0,255,0.3);
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
@@ -3991,8 +3991,8 @@ pre .javascript .function {
   background: var(--blue-3);
   color: #fff;
   font-weight: bold;
-  -webkit-box-shadow: 0 2px 12px rgba(255,78,106,0.55);
-  box-shadow: 0 2px 12px rgba(255,78,106,0.55);
+  -webkit-box-shadow: 0 2px 12px rgba(106,78,255,0.55);
+  box-shadow: 0 2px 12px rgba(106,78,255,0.55);
   border-radius: 5px;
   display: -webkit-box;
   display: -moz-box;
