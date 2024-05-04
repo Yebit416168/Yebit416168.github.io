@@ -25,15 +25,20 @@
   
 <link rel="stylesheet" href="/css/loader.css">
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="第一步  安装node  你需要下载node windows Macos   第二步  安装hexo  点击进入hexo官网   第三步   安装git 点击按钮下载   第四步   创建文件夹存放hexo 在文件夹内右键点Open git bash here 依次输入 npm install hexo-cli -g hexo init blog cd blog npm install hexo">
+<meta property="og:type" content="article">
 <meta property="og:title" content="搭建博客教程">
 <meta property="og:url" content="https://www.mcexplorer.top/2024/04/14/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="YeKai">
+<meta property="og:description" content="第一步  安装node  你需要下载node windows Macos   第二步  安装hexo  点击进入hexo官网   第三步   安装git 点击按钮下载   第四步   创建文件夹存放hexo 在文件夹内右键点Open git bash here 依次输入 npm install hexo-cli -g hexo init blog cd blog npm install hexo">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hexo.io/logo.svg">
+<meta property="og:image" content="https://git-scm.com/images/logo@2x.png">
 <meta property="article:published_time" content="2024-04-14T06:42:34.000Z">
-<meta property="article:modified_time" content="2024-04-14T06:42:34.248Z">
+<meta property="article:modified_time" content="2024-05-04T02:42:57.812Z">
 <meta property="article:author" content="YeKai">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hexo.io/logo.svg">
   
     <link rel="alternate" href="/atom.xml" title="YeKai" type="application/atom+xml">
   
@@ -85,7 +90,7 @@
   
     <script src="/sw.js"></script>
   
-<meta name="generator" content="Hexo 7.1.1"></head>
+<meta name="generator" content="Hexo 7.2.0"></head>
 
   <body>
     
@@ -200,7 +205,11 @@
     
       <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
   <h3 class="toc-title">文章目录</h3>
-  <div class="sidebar-toc-wrapper"></div>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="toc-number">1.</span> <span class="toc-text"> 第一步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85node"><span class="toc-number">1.1.</span> <span class="toc-text"> 安装node</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="toc-number">2.</span> <span class="toc-text"> 第二步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-number">2.1.</span> <span class="toc-text"> 安装hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="toc-number">3.</span> <span class="toc-text"> 第三步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85git"><span class="toc-number">3.1.</span> <span class="toc-text"> 安装git</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5"><span class="toc-number">4.</span> <span class="toc-text"> 第四步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AD%98%E6%94%BEhexo"><span class="toc-number">4.1.</span> <span class="toc-text"> 创建文件夹存放hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5"><span class="toc-number">5.</span> <span class="toc-text"> 第五步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98"><span class="toc-number">5.1.</span> <span class="toc-text"> 安装主题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5"><span class="toc-number">6.</span> <span class="toc-text"> 第六步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E7%BD%91%E7%BB%9C%E4%B8%8A%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="toc-number">6.1.</span> <span class="toc-text"> 在网络上访问博客</span></a></li></ol></li></ol>
+      
+  </div>
 </div>
 </div>
       <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -291,11 +300,66 @@
 
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h2 id="第一步"><a class="markdownIt-Anchor" href="#第一步"></a> 第一步</h2>
+<h3 id="安装node"><a class="markdownIt-Anchor" href="#安装node"></a> 安装node</h3>
+<blockquote>
+<p>你需要下载node<br />
+<a target="_blank" rel="noopener" href="https://npmmirror.com/mirrors/node/v20.12.0/node-v20.12.0-x64.msi">windows</a><br />
+<a href="%5Bwindows%5D(https://npmmirror.com/mirrors/node/v20.12.0/node-v20.12.0-x64.msi)">Macos</a></p>
+</blockquote>
+<h2 id="第二步"><a class="markdownIt-Anchor" href="#第二步"></a> 第二步</h2>
+<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo"></a> 安装hexo</h3>
+<blockquote>
+<p>点击进入hexo官网<button style="width: 50px; height: 30px;"><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/"><img src="https://hexo.io/logo.svg" width=20 height=20 /></a></button></p>
+</blockquote>
+<h2 id="第三步"><a class="markdownIt-Anchor" href="#第三步"></a> 第三步</h2>
+<blockquote>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git"></a> 安装git</h3>
+<p>点击按钮下载<button style="width: 50px;"><a target="_blank" rel="noopener" href="https://git-scm.com/download/win"><img src="https://git-scm.com/images/logo@2x.png" width=20 /></a></button></p>
+</blockquote>
+<h2 id="第四步"><a class="markdownIt-Anchor" href="#第四步"></a> 第四步</h2>
+<blockquote>
+<h3 id="创建文件夹存放hexo"><a class="markdownIt-Anchor" href="#创建文件夹存放hexo"></a> 创建文件夹存放hexo</h3>
+<p>在文件夹内右键点Open git bash here<br />
+依次输入<br />
+npm install hexo-cli -g<br />
+hexo init blog<br />
+cd blog<br />
+npm install<br />
+hexo server<br />
+这个时候你的博客就正常运行了，并且创建了blog文件夹，可以通过本地ip访问<br />
+但是现在没有安装主题，并且文章只有hello word</p>
+</blockquote>
+<h2 id="第五步"><a class="markdownIt-Anchor" href="#第五步"></a> 第五步</h2>
+<blockquote>
+<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题"></a> 安装<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题</a></h3>
+<p>有可能需要魔法才能进入<br />
+选一个主题底下有安装教程<br />
+在themes文件夹下右键点Open git bash here输入如下<br />
+例如：git clone <a target="_blank" rel="noopener" href="https://github.com/%E4%B8%BB%E9%A2%98%E4%BD%9C%E8%80%85%E5%90%8D%E5%AD%97/%E4%B8%BB%E9%A2%98%E5%90%8D%E5%AD%97.git">https://github.com/主题作者名字/主题名字.git</a> themes/主题名字<br />
+打开blog，修改成如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: 主题名称</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>并将themes文件夹下的文件也改成主题名称<br />
+输入如下代码，在blog文件夹下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g #生成网页</span><br><span class="line">hexo s #运行网页</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>里面的文章在hexo\blog\source_posts 文件夹内<br />
+可以通过&lt;hexo new 文章名称&gt;创建，文件是&lt;<a target="_blank" rel="noopener" href="http://xn--eqrp02b51on1a.md">文章名称.md</a>&gt;</p>
+</blockquote>
+<h2 id="第六步"><a class="markdownIt-Anchor" href="#第六步"></a> 第六步</h2>
+<blockquote>
+<h3 id="在网络上访问博客"><a class="markdownIt-Anchor" href="#在网络上访问博客"></a> 在网络上访问博客</h3>
+<p>累了不写了，下次有空再写，可以先看别人的这一步教程，可以用github page来访问博客<br />
+上网查</p>
+</blockquote>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.mcexplorer.top/2024/04/14/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" data-id="cluz5whh80000n4o16q21af3p" data-title="搭建博客教程" class="article-share-link">分享</a>
+      <a data-url="https://www.mcexplorer.top/2024/04/14/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" data-id="clvrha92x0004l8o1405s3be7" data-title="搭建博客教程" class="article-share-link">分享</a>
       
       
         <a href="/2024/04/14/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/#comments" class="article-comment-link">
@@ -324,7 +388,7 @@
       
         
         
-          <img data-src="/covers/bg1.jpg" data-sizes="auto" alt="《平凡的世界》" class="lazyload">
+          <img data-src="/covers/bg2.jpg" data-sizes="auto" alt="《平凡的世界》" class="lazyload">
         
       
       <a href="/2024/04/14/%E3%80%8A%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E3%80%8B/"></a>
@@ -374,7 +438,7 @@
       
         <div>
           <span class="icon-brush"></span>
-          134
+          646
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
           00:04
@@ -404,7 +468,11 @@
     
       <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
   <h3 class="toc-title">文章目录</h3>
-  <div class="sidebar-toc-wrapper"></div>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="toc-number">1.</span> <span class="toc-text"> 第一步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85node"><span class="toc-number">1.1.</span> <span class="toc-text"> 安装node</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="toc-number">2.</span> <span class="toc-text"> 第二步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-number">2.1.</span> <span class="toc-text"> 安装hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="toc-number">3.</span> <span class="toc-text"> 第三步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85git"><span class="toc-number">3.1.</span> <span class="toc-text"> 安装git</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5"><span class="toc-number">4.</span> <span class="toc-text"> 第四步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AD%98%E6%94%BEhexo"><span class="toc-number">4.1.</span> <span class="toc-text"> 创建文件夹存放hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5"><span class="toc-number">5.</span> <span class="toc-text"> 第五步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98"><span class="toc-number">5.1.</span> <span class="toc-text"> 安装主题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5"><span class="toc-number">6.</span> <span class="toc-text"> 第六步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E7%BD%91%E7%BB%9C%E4%B8%8A%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="toc-number">6.1.</span> <span class="toc-text"> 在网络上访问博客</span></a></li></ol></li></ol>
+      
+  </div>
 </div>
 </div>
       <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -563,7 +631,7 @@
 <script src="https://npm.webcache.cn/mouse-firework@0.0.4/dist/index.umd.js"></script>
 
   <script>
-    firework(JSON.parse('{"excludeElements":["a"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["#5252ff","#7c7cff","#afafff","#d0d0ff"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["#0000ff"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+    firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["#5252ff","#7c7cff","#afafff","#d0d0ff"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["#0000ff"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
   </script>
 
 
@@ -585,7 +653,7 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '0.1.1' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '0.1.2' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 
