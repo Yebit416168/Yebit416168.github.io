@@ -10,25 +10,26 @@
   
 
   
+  <script>window.icon_font = '4552607_09mhdxci6yrk';window.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ"};</script>
+  
+  
   <title>
     关于 |
     
     YeKai
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CUbuntu%20Mono:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CUbuntu%20Mono:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CUbuntu%20Mono:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
   
-<link rel="stylesheet" href="https://npm.webcache.cn/@fortawesome/fontawesome-free@6.5.1/css/regular.min.css">
-<link rel="stylesheet" href="https://npm.webcache.cn/@fortawesome/fontawesome-free@6.5.1/css/solid.min.css">
-
-  <link rel="preload" href="https://npm.webcache.cn/@fortawesome/fontawesome-free@6.5.1/css/brands.min.css" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;"><link rel="preload" href="https://npm.webcache.cn/@fortawesome/fontawesome-free@6.5.1/css/v5-font-face.min.css" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;"><link rel="preload" href="https://npm.webcache.cn/@fortawesome/fontawesome-free@6.5.1/css/v4-font-face.min.css" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;">
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_09mhdxci6yrk.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
   
 <link rel="stylesheet" href="/css/loader.css">
 
   <meta name="description" content="关于">
 <meta property="og:type" content="website">
 <meta property="og:title" content="关于">
-<meta property="og:url" content="https://www.mcexplorer.top/about/index.html">
+<meta property="og:url" content="https://www.mcyekai.top/about/index.html">
 <meta property="og:site_name" content="YeKai">
 <meta property="og:description" content="关于">
 <meta property="og:locale" content="zh_CN">
@@ -43,18 +44,11 @@
     <link rel="shortcut icon" href="/images/favicon.ico">
   
   
-    
-<link rel="stylesheet" href="https://npm.webcache.cn/typeface-source-code-pro@1.1.13/index.css">
-
-  
-  
 <link rel="stylesheet" href="/css/style.css">
 
   
-    
-<link rel="stylesheet" href="https://npm.webcache.cn/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css">
 
-  
   
     
 <link rel="stylesheet" href="https://npm.webcache.cn/katex@0.16.9/dist/katex.min.css">
@@ -92,11 +86,11 @@
   <body>
     
   <div id='loader'>
-    <div class="loading-left-bg"></div>
-    <div class="loading-right-bg"></div>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
     <div class="spinner-box">
       <div class="loading-taichi">
-        <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+        <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
           <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="#ff6e6b" />
           <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z" fill="#fd0d00" />
           <path d="M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95" fill="#fd0d00" />
@@ -108,11 +102,11 @@
   </div>
   <script>
     var time = null;
-    const startLoading = () => {
+    var startLoading = () => {
       time = Date.now();
       document.getElementById('loader').classList.remove("loading");
     }
-    const endLoading = () => {
+    var endLoading = () => {
       if (!time) {
         document.body.style.overflow = 'auto';
         document.getElementById('loader').classList.add("loading");
@@ -127,10 +121,12 @@
         }
       }
     }
-    window.addEventListener('load', endLoading);
+    window.addEventListener('DOMContentLoaded', endLoading);
     document.getElementById('loader').addEventListener('click', endLoading);
   </script>
 
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
 
     <div id="container">
       <div id="wrap">
@@ -171,7 +167,9 @@
 </div>
 <header id="header">
   
-    <img fetchpriority="high" src="/images/banner.jpg" alt="关于">
+    
+      <img fetchpriority="high" src="/images/banner.jpg" alt="关于">
+    
   
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
@@ -221,11 +219,11 @@
 </div>
 <div class="sidebar-social">
   
-    <div class=icon-github>
+    <div class="icon-github sidebar-social-icon">
       <a href=https://github.com/Yebit416168 itemprop="url" target="_blank" aria-label="github"></a>
     </div>
   
-    <div class=icon-bilibili>
+    <div class="icon-bilibili sidebar-social-icon">
       <a href=https://space.bilibili.com/2008128769 itemprop="url" target="_blank" aria-label="bilibili"></a>
     </div>
   
@@ -288,7 +286,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.mcexplorer.top/about/index.html" data-id="clvrha9180000l8o1d57q5k0u" data-title="关于" class="article-share-link">分享</a>
+      
       
       
         <a href="/about/index.html#comments" class="article-comment-link">
@@ -366,7 +364,7 @@
 </footer>
 
         <div class="sidebar-top">
-          <img src="/images/taichi.png" height="50" width="50" />
+          <img src="/images/taichi.png" height="50" width="50" alt="backtop" />
           <div class="arrow-up"></div>
         </div>
         <div id="mask"></div>
@@ -395,11 +393,11 @@
 </div>
 <div class="sidebar-social">
   
-    <div class=icon-github>
+    <div class="icon-github sidebar-social-icon">
       <a href=https://github.com/Yebit416168 itemprop="url" target="_blank" aria-label="github"></a>
     </div>
   
-    <div class=icon-bilibili>
+    <div class="icon-bilibili sidebar-social-icon">
       <a href=https://space.bilibili.com/2008128769 itemprop="url" target="_blank" aria-label="bilibili"></a>
     </div>
   
@@ -453,9 +451,6 @@
       </div>
     </div>
     
-<script src="https://npm.webcache.cn/jquery@3.7.1/dist/jquery.min.js"></script>
-
-
 <script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"></script>
 
 
@@ -463,31 +458,50 @@
 
 
 
-  
-<script src="https://npm.webcache.cn/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
-
-
-
-  
-<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
-
-
-
+<script src="/js/script.js"></script>
 
 
 
 <script src="/js/pjax_script.js" data-pjax></script>
 
 
+<script type="module" data-pjax>
+  import PhotoSwipeLightbox from "https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js";
+  
+  const pswp = () => {
+    if (_$$('.article-entry a.article-gallery-item').length > 0) {
+      new PhotoSwipeLightbox({
+        gallery: '.article-entry',
+        children: 'a.article-gallery-item',
+        pswpModule: () => import("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.js")
+      }).init();
+    }
+    if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+      new PhotoSwipeLightbox({
+        gallery: '.article-gallery',
+        children: 'a.article-gallery-item',
+        pswpModule: () => import("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.js")
+      }).init();
+    }
+    window.lightboxStatus = 'done';
+    window.removeEventListener('lightbox:ready', pswp);
+  }
+  if(window.lightboxStatus === 'ready') {
+    pswp()
+  } else {
+    window.addEventListener('lightbox:ready', pswp);
+  }
+</script>
+
 
 
 
   <script data-pjax type="module">
-    import { init } from "https://npm.webcache.cn/@waline/client@v2/dist/waline.mjs";
-    if(document.querySelector('.wcomment')) {
-      init({
+    import { init } from "https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.mjs";
+    if(_$('.wcomment')) {
+      window.walineInstance = init({
         el: '.wcomment',
-        serverURL: 'https://walien.mcexplorer.top/',
+        serverURL: 'https://walien.mcyekai.top/',
         lang: 'zh-CN',
         locale: {},
         emoji: ["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba","https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"],
@@ -513,9 +527,6 @@
   
 <script src="/js/generator_search.js"></script>
 
-  
-<script src="https://npm.webcache.cn/instantsearch.js@4.56.1/dist/instantsearch.production.min.js"></script>
-
 
 
 
@@ -533,9 +544,11 @@
 
 
 
-
-<script src="/js/script.js"></script>
-
+<div id="lazy-script">
+  <div>
+    
+  </div>
+</div>
 
 
   <script>
@@ -547,9 +560,14 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '0.1.2' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '0.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
 
   <!-- hexo injector body_end start -->
 <script src="/js/insert_highlight.js" data-pjax></script>
