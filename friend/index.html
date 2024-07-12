@@ -170,7 +170,16 @@
 <header id="header">
   
     
-      <img fetchpriority="high" src="/images/banner.jpg" alt="友情链接">
+      <picture>
+        
+          <source media="(max-width: 479px)" srcset="/images/banner-600w.jpg">
+        
+          <source media="(max-width: 799px)" srcset="/images/banner-800w.jpg">
+        
+          <source media="(min-width: 800px)" srcset="/images/banner.jpg">
+        
+        <img fetchpriority="high" src="/images/banner.jpg" alt="友情链接">
+      </picture>
     
   
   <div id="header-outer" class="outer">
